@@ -13,7 +13,8 @@ module.exports = function renderPug(filePath) {
     const html = pug.renderFile(filePath, {
         doctype: 'html',
         filename: filePath,
-        basedir: srcPath
+        basedir: srcPath,
+        dico: require(srcPath+"/dico.json")
     });
 
     const destPathDirname = upath.dirname(destPath);

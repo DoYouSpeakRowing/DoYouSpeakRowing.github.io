@@ -5,11 +5,10 @@
 #portfolio {
     .container-fluid {
         max-width: 1920px;
-
         .portfolio-box {
             position: relative;
             display: block;
-
+            
             .portfolio-box-caption {
                 display: flex;
                 align-items: center;
@@ -26,7 +25,7 @@
                 opacity: 0;
 
                 color: $white;
-                background: fade-out($primary, 0.1);
+                background: fade-out($primary, 0.2);
                 transition: opacity 0.25s ease;
                 text-align: center;
 
@@ -40,12 +39,21 @@
                 .project-name {
                     font-size: 1.2rem;
                 }
+                
             }
-
             &:hover {
                 .portfolio-box-caption {
                     opacity: 1;
                 }
+            }
+            .mybg-light {
+                background: fade-out($light, 0.2) ;
+            }
+            .mybg-secondary {
+                background: fade-out($secondary, 0.2) ;
+            }
+            .mybg-info {
+                background: fade-out($info, 0.2) ;
             }
         }
     }

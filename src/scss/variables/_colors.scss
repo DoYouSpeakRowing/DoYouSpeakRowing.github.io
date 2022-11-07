@@ -2,13 +2,26 @@
 // Colors
 // 
 
+
 //- Override and add to color system
 $orange: #f4623a;
 $brown: #5c4d42;
+$blue: #051094;
+$gradient: #273329;
+$marine:#000080;
+$sea1: #113F67;
+$sea2:#34699A;
+$sea3:#408AB4;
+$sea4:#01A7A3;
 
 //- Override primary color
-$primary: $orange;
+$primary: $sea1;
+$secondary: $sea2;
+$info: $sea3;
+$light:$sea4;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio: 3;
+
+
