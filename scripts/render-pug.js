@@ -4,6 +4,7 @@ const upath = require('upath');
 const pug = require('pug');
 const sh = require('shelljs');
 const prettier = require('prettier');
+const csv2json = require('./csv2json.js');
 
 module.exports = function renderPug(filePath) {
     const destPath = filePath.replace(/src\/pug\//, 'docs/').replace(/\.pug$/, '.html');
@@ -16,6 +17,8 @@ module.exports = function renderPug(filePath) {
         basedir: srcPath,
         dico: require(srcPath+"/dico.json")
     });
+    console.log(csv2json(fs.readFileSync(srcPath+"/dico.json","utf-8")));
+    
 
     const destPathDirname = upath.dirname(destPath);
     if (!sh.test('-e', destPathDirname)) {
