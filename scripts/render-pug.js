@@ -17,7 +17,7 @@ module.exports = function renderPug(filePath) {
         basedir: srcPath,
         dico: require(srcPath+"/dico.json")
     });
-    console.log(csv2json(fs.readFileSync(srcPath+"/dico.json","utf-8")));
+   // console.log(csv2json(fs.readFileSync(srcPath+"/dico.json","utf-8")));
     
 
     const destPathDirname = upath.dirname(destPath);
