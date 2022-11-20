@@ -23,6 +23,57 @@ body {
 }
 
 // Custom utilities for this theme
-.text-white-75 {
+.txt4 {
     color: fade-out($white, 0.25) !important;
+    margin-bottom : 1.5rem !important;
+}
+.txt5 {
+    color: fade-out($white, 0.25) !important;
+    margin-bottom : 3rem !important;
+}
+// navbar to the left for icon
+.navcont {
+    margin-left:0;
+    padding-left:0;
+    width:100%;
+}
+
+
+:root {
+    --small-width-big: 100%;
+    --big-width-big:83.333333333%;
+    --cont-width-big:16.6666666667%
+}
+
+
+.cont {
+    display:flex;
+    flex-direction:column;
+    width:33.3333333333%;
+}
+@media(min-width:768px) {
+    .cont {
+        flex-direction:row;
+        width:var(--cont-width-big);
+    }
+}
+
+.smallcol {
+    width:100%;
+    flex: 0 0 auto;
+}
+@media(min-width: 768px) {
+    .smallcol  {
+        width:var(--small-width-big);
+    }
+}
+
+.bigcol {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+@media(min-width:768px) {
+    .bigcol {
+        width: var(--big-width-big);
+    }
 }
