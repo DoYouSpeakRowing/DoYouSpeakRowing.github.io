@@ -60,21 +60,20 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     else console.log("menu not found");
     // Collapse responsive navbar when toggler is visible
-    // Removed as it prevents drop-down in collapsed navbar from being displayed
-    /*
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
     
     responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+        if(!responsiveNavItem.classList.contains("dropdown-toggle")) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        }
     });
-*/
     // Activate SimpleLightbox plugin for portfolio items
     //new SimpleLightbox({
     //    elements: '#portfolio a.portfolio-box'

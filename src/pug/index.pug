@@ -68,10 +68,10 @@ html(lang=mylang)
                             a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarTranslate",role='button', aria-expanded='false')  Translate to
                             ul.dropdown-menu(aria-labelledby="navbarTranslate",id="translateDropdown")
                                 li.nav-item
-                                        a.dropdown-item(id="none") none
+                                        a.dropdown-item(id="none").nav-link none
                                 each lang in allLangs
                                     li.nav-item
-                                        a.dropdown-item(id="tr_"+lang[0]) #{lang[0]}
+                                        a.dropdown-item(id="tr_"+lang[0]).nav-link #{lang[0]}
                                         
         // Masthead     
         header.masthead
