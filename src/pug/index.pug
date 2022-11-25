@@ -1,16 +1,16 @@
 
 
-mixin definition(word)
+mixin definition(word,theId)
     div.cont.gx-4
         div.smallcol.px3
             p.txt4 #{word.name}
         div.smallcol(style="display:none")
-            p.txt4 #{word.name}
+            p(id=theId).txt4 #{word.name}
     div.bigcol
         p.txt4 #{word.desc}
 
 doctype html
-html(lang=mylang)
+html(lang=mylang.iso)
 
     head
 
@@ -25,10 +25,10 @@ html(lang=mylang)
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
         //Alternate
         each lang in allLangs
-            if lang[0] == "en"
+            if lang.iso == "en"
                 link(rel='alternate',  href="https://doyouspeakrowing.github.io/www/index.html", hreflang='x-default')
             else 
-                link(rel='alternate',  href="https://doyouspeakrowing.github.io/www/index-"+lang[0]+".html", hreflang=lang[0])
+                link(rel='alternate',  href="https://doyouspeakrowing.github.io/www/index-"+lang.iso+".html", hreflang=lang.iso)
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
 
@@ -48,42 +48,53 @@ html(lang=mylang)
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container-fluid.navcont
                 a.navbar-brand(href='#page-top')
-                    img(src="assets/img/Blade.svg",height=65,alt="Do you speak rowing?")
+                    img(src="assets/img/Blade.svg",height=65,alt=dico.dysr.desc)
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
                         li.nav-item
-                            a.nav-link(href='#portfolio') Rowing lexicon  
+                            a.nav-link(href='#portfolio') #{dico.lexicon.desc}
                         li.nav-item.dropdown     
-                            a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarDropdown",role='button', aria-expanded='false')  My language
+                            a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarDropdown",role='button', aria-expanded='false') 
+                                span(class="fi fi-"+mylang.flag)
                             ul.dropdown-menu(aria-labelledby="navbarDropdown")
                                 each lang in allLangs
-                                    li.nav-item
-                                        if(lang[0]!="en")
-                                            a.dropdown-item(href="index-"+lang[0]+".html") #{lang[0]}
+                                    if(lang.iso != mylang.iso) 
+                                        if(lang.iso!="en")
+                                            - var myref="index-"+lang.iso+".html"
                                         else
-                                            a.dropdown-item(href="index.html") #{lang[0]}
+                                            - var myref="index.html"
+                                        li.nav-item
+                                            a.dropdown-item(href=myref) 
+                                                span(class="fi fi-"+lang.flag) 
+                                                | #{lang.name}
+                                                        
+                                        
+                                        
                         li.nav-item.dropdown     
-                            a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarTranslate",role='button', aria-expanded='false')  Translate to
+                            a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarTranslate",role='button', aria-expanded='false')  #{dico.translate.desc}
                             ul.dropdown-menu(aria-labelledby="navbarTranslate",id="translateDropdown")
-                                li.nav-item
-                                        a.dropdown-item(id="none").nav-link none
+                                li
+                                    a.active.dropdown-item(id="none") #{dico.none.desc}
                                 each lang in allLangs
-                                    li.nav-item
-                                        a.dropdown-item(id="tr_"+lang[0]).nav-link #{lang[0]}
+                                    if(lang.iso != mylang.iso) 
+                                        li
+                                            a.dropdown-item(id="tr_"+lang.iso)
+                                                span(class="fi fi-"+lang.flag) 
+                                                | #{lang.name}
                                         
         // Masthead     
         header.masthead
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center
                     .col-lg-8.align-self-end
-                        h1.text-white.font-weight-bold Do you speak rowing?
+                        h1.text-white.font-weight-bold #{dico.dysr.desc}
                         hr.divider
                     .col-lg-8.align-self-baseline
                         p.txt5
-                            | Everything you always wanted to know about rowing terms in all the languages you need!
-                        a.btn.btn-primary.btn-xl(href='#portfolio') Show me
+                            | #{dico.description.desc}
+                        a.btn.btn-primary.btn-xl(href='#portfolio') #{dico.showme.desc}
 
        
         // Portfolio
@@ -91,77 +102,77 @@ html(lang=mylang)
             .container-fluid.p-0
                 .row.g-0
                     .col-6
-                        a.portfolio-box(href='#crew', title='Crew')
+                        a.portfolio-box(href='#crew', title=dico.crew.desc)
                             img.img-fluid(src='assets/img/crew.webp', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | #{dico.category.desc}
                                 .project-name
-                                    | Crew
+                                    | #{dico.crew.desc}
                     .col-6
-                        a.portfolio-box(href='#technique', title='Technique')
+                        a.portfolio-box(href='#technique', title=dico.technique.desc)
                             img.img-fluid(src='assets/img/technique.jpg', alt='...')
                             .portfolio-box-caption.mybg-secondary
                                 .project-category.text-white-50
-                                    | Category
+                                    | #{dico.category.desc}
                                 .project-name
-                                    | Technique
+                                    | #{dico.technique.desc}
                     .col-6
-                        a.portfolio-box(href='#equipment', title='Equipment')
+                        a.portfolio-box(href='#equipment', title=dico.equipment.desc)
                             img.img-fluid(src='assets/img/boat.webp', alt='...')
                             .portfolio-box-caption.mybg-info
                                 .project-category.text-white-50
-                                    | Category
+                                    | #{dico.category.desc}
                                 .project-name
-                                    | Equipment
+                                    | #{dico.equipment.desc}
                     .col-6
-                        a.portfolio-box(href='#orders', title='Orders')
+                        a.portfolio-box(href='#orders', title=dico.orders.desc)
                             img.img-fluid(src='assets/img/orders.webp', alt='...')
                             .portfolio-box-caption.mybg-light
                                 .project-category.text-white-50
-                                    | Category
+                                    | #{dico.category.desc}
                                 .project-name
-                                    | Orders
+                                    | #{dico.orders.desc}
                     
         // by category
         section#crew.page-section.bg-primary
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.justify-content-center
                     .col-12.align-self-end
-                        h1.text-white.font-weight-bold Crew
+                        h1.text-white.font-weight-bold #{dico.crew.desc}
                         hr.divide
-                    each word in dico
-                        if word.cat == "crew"
-                            +definition(word)
+                    each word in Object.entries(dico)
+                        if word[1].cat == "crew"
+                            +definition(word[1],word[0])
         
         section#technique.page-section.bg-secondary
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.justify-content-center
                     .col-12.align-self-end
-                        h1.text-white.font-weight-bold Technique
+                        h1.text-white.font-weight-bold #{dico.technique.desc}
                         hr.divide
-                    each word in dico
-                        if word.cat == "technique"
-                            +definition(word)
+                    each word in Object.entries(dico)
+                        if word[1].cat == "technique"
+                            +definition(word[1],word[0])
         section#equipment.page-section.bg-info
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.justify-content-center
                     .col-12.align-self-end
-                        h1.text-white.font-weight-bold Equipment
+                        h1.text-white.font-weight-bold #{dico.equipment.desc}
                         hr.divide
-                    each word in dico
-                        if word.cat == "boat"
-                            +definition(word)
+                    each word in Object.entries(dico)
+                        if word[1].cat == "boat"
+                            +definition(word[1],word[0])
         
         section#orders.page-section.bg-light
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.align-items-center.justify-content-center
                     .col-12.align-self-end
-                        h1.text-white.font-weight-bold Orders
+                        h1.text-white.font-weight-bold #{dico.orders.desc}
                         hr.divide
-                    each word in dico
-                        if word.cat == "orders"
-                            +definition(word)
+                    each word in Object.entries(dico)
+                        if word[1].cat == "orders"
+                            +definition(word[1],word[0])
         // Contact
         section#contact.page-section
             .container.px-4.px-lg-5

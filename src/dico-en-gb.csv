@@ -1,5 +1,5 @@
 ﻿id,name,cat,desc
-federation,FFA,crew,Fédération Française d'Aviron. Tout les clubs français sont rattachés à cette fédération.
+federation,ARA,crew,"Amateur Rowing Association. The national governing body for rowing in England, to which all clubs should be affiliated. Offers individual membership with benefits of monthly magazine, website information, insurance and racing licence to open regattas that are run under the associations rules. "
 backdown,Back down,technique,Term used to describe using a reverse rowing action to manoeuvre the boat backwards or for turning. 
 backsplash,The backsplash,technique,This term is in reference to the water thrown back toward the bow direction by the blade as it enters the water. Less is best. This indicates that the blade has been properly planted before the rower initiates the drive.
 backstay,The backstay,boat,The back brace of a rigger that locks the pin in position to maintain pitch. (not found on wing rigger boats. 
@@ -136,14 +136,14 @@ tapTurn,Tap turn,technique,Term used to describe a method of turning the boat wh
 tracks,The tracks,boat,"The set of metal runners set inside the shell, to accept the wheels on the bottom of each rowers seat (slide). Also called: Slide"
 trestles,The trestles (or slings),boat,"Portable stands used to support a boat for rigging, washing, admiring etc."
 wash,The wash,technique,"The wake from a motorized boat, disliked by rowers as the wash affects the boat stability and can cause water to flood over the gunwales."
-dysr,,web,Parlez vous aviron?
-lexicon,,web,Lexique d'aviron
-translate,,web,Traduction
-description,,web,Tout ce que vous vouliez savoir sur le vocabulaire de l'aviron dans toutes les langues!
-showme,,web,Allons-y
-crew,,web,Equipage
+dysr,,web,Do you speak rowing?
+lexicon,,web,Rowing lexicon
+translate,,web,Translate to
+description,,web,Everything you always wanted to know about rowing terms in all the languages you need!
+showme,,web,Show me
+crew,,web,Crew
 technique,,web,Technique
-equipment,,web,Equipement
-orders,,web,Ordres
-category,,web,Categorie
-none,,web,aucune
+equipment,,web,Equipment
+orders,,web,Orders
+category,,web,Category
+none,,web,none
