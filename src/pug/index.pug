@@ -13,7 +13,14 @@ doctype html
 html(lang=mylang.iso)
 
     head
-
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTXR1F3502"></script>
+        <script>
+            | window.dataLayer = window.dataLayer || [];
+            | function gtag(){dataLayer.push(arguments);}
+            | gtag('js', new Date());
+            | gtag('config', 'G-NTXR1F3502');
+        </script>
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
@@ -74,6 +81,7 @@ html(lang=mylang.iso)
                                         
                         li.nav-item.dropdown     
                             a.nav-link.dropdown-toggle(href='#', data-bs-toggle='dropdown', id="navbarTranslate",role='button', aria-expanded='false')  #{dico.translate.desc}
+                                span(id='trspan')
                             ul.dropdown-menu(aria-labelledby="navbarTranslate",id="translateDropdown")
                                 li
                                     a.active.dropdown-item(id="none") #{dico.none.desc}

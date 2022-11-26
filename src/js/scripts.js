@@ -58,13 +58,17 @@ window.addEventListener('DOMContentLoaded', event => {
                 VarRoot.setProperty('--small-width-big',"100%");
                 VarRoot.setProperty('--big-width-big',"83.333333333333%");
                 VarRoot.setProperty('--cont-width-big',"16.666666666667%");
-
+                const trspan=document.getElementById('trspan');
+                trspan.className='';
                 const divs=document.getElementsByClassName('cont')
                 Array.prototype.forEach.call(divs,div => {
                     div.children[1].style.display="none";
                 });
             } else {
-                switchTranslateLang(e.target.id.substring(3)+".json");
+                const trlang=e.target.id.substring(3);
+                switchTranslateLang(trlang+".json");
+                const trspan=document.getElementById('trspan');
+                trspan.className=e.target.children[0].className;
                 VarRoot=document.documentElement.style;
                 VarRoot.setProperty('--small-width-big',"50%");
                 VarRoot.setProperty('--big-width-big',"66.666666666667%");
