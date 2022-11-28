@@ -107,6 +107,21 @@ window.addEventListener('DOMContentLoaded', event => {
      })
     });
 
+    //manage form submission
+    const contact = document.getElementById('submitButton');
+    const nameInput=document.getElementById('name');
+    contact.addEventListener("click",async (e)=>{
+        console.log("in form submit")
+        const response = await fetch('https://jolly-custard-c72286.netlify.app/.netlify/functions/hello',{
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify({
+                    postvar: nameInput.value
+            })
+    })
+       .then(response=>console.log(response.status))
+    })
+
     // Activate SimpleLightbox plugin for portfolio items
     //new SimpleLightbox({
     //    elements: '#portfolio a.portfolio-box'
