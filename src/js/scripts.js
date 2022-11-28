@@ -109,7 +109,6 @@ window.addEventListener('DOMContentLoaded', event => {
         console.log("in form submit")
         const response = await fetch('https://jolly-custard-c72286.netlify.app/.netlify/functions/hello',{
             method: 'POST',
-            mode: 'no-cors',
             body: JSON.stringify({
                     postvar: nameInput.value
             })
