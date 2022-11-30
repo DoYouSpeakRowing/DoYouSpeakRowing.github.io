@@ -110,12 +110,16 @@ window.addEventListener('DOMContentLoaded', event => {
     //manage form submission
     const contact = document.getElementById('submitButton');
     const nameInput=document.getElementById('name');
+    const emailInput=document.getElementById('email');
+    const msgInput=document.getElementById('message');
     contact.addEventListener("click",async (e)=>{
         console.log("in form submit")
         const response = await fetch('https://jolly-custard-c72286.netlify.app/.netlify/functions/hello',{
             method: 'POST',
             body: JSON.stringify({
-                    postvar: nameInput.value
+                    name: nameInput.value,
+                    email: emailInput.value,
+                    msg: msgInput.value
             })
     })
        .then(response=>console.log(response.status))
