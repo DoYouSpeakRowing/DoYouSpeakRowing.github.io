@@ -1,0 +1,11 @@
+SIS handover
+
+KPI secu : Ariano/Horia 
+sponsor pillar 3 PCI access management de la platform (romain pastorino)
+Regular GSOC olivier Thonnard (Slavko+Adrianno)
+Regular Bruno
+connect Adrianno
+pen test follow up
+ISSt monthly exception corporate guidelines secu (non-curiosity cjab)
+offre TAP ciso...(Sven driver)
+PM ownership secu product trying (quentin marc) ou romain peicle
