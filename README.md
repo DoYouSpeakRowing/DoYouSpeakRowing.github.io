@@ -9,7 +9,8 @@
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DoYouSpeakRowing/www/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/doyouspeakrowing)
+[![npm version](https://img.shields.io/npm/v/doyouspeakrowing)](https://www.npmjs.com/package/doyouspeakrowing)
+[![issues](https://img.shields.io/github/issues/doyouspeakrowing/www)](https://github.com/DoYouSpeakRowing/www/issues)
 
 ## Download and Installation
 
@@ -49,7 +50,7 @@ It is very easy to add new languages in this glossary simply add a .csv file in 
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-creative/issues) here on GitHub.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/DoYouSpeakRowing/www/issues) here on GitHub.
 
 ## About
 
