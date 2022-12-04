@@ -3,7 +3,7 @@
 [Multilingual glossary](https://doyouspeakrowing.github.io/www) is a one page, website theme built with [Bootstrap](https://getbootstrap.com/) to present a glossary in multiple languages
 
 ## Preview
-
+[![Doyouspeakrowing  Preview](Doyouspeakrowing_preview.webp)](https://doyouspeakrowing.github.io/www)
 **[View Live Preview](https://doyouspeakrowing.github.io/www)**
 
 ## Status
@@ -16,8 +16,8 @@
 To begin using this template, choose one of the following options to get started:
 
 - Install using npm: `npm i doyouspeakrowing`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-creative.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-creative)
+- Clone the repo: `git clone https://github.com/DoYouSpeakRowing/www.git`
+- [Fork, Clone, or Download on GitHub](https://github.com/DoYouSpeakRowing/www)
 
 ## Usage
 
@@ -43,7 +43,7 @@ You must have npm installed in order to use this build environment.
 
 #### Adding new languages
 
-It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-<language>-<country>.csv or dico-<language>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and langauge code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
+It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-\<language\>-\<country\>.csv or dico-\<language\>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and langauge code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
 
 
 
@@ -57,7 +57,7 @@ This theme is an open source library and is released under the MIT license, whic
 
 
 It is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-It was derived from [StartBootstrap creative] created by [David Miller](https://davidmiller.io/)
+It was derived from [StartBootstrap creative](https://github.com/StartBootstrap/startbootstrap-creative) created by [David Miller](https://davidmiller.io/)
 The csv to json conversion code in js is re-used from [Flatfile](https://csvjson.com/)
 
 ## Rowing glossary content
