@@ -9,7 +9,7 @@
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DoYouSpeakRowing/doyouspeakrowing.github.io/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/doyouspeakrowing)](https://doyouspeakrowing.github.io.npmjs.com/package/doyouspeakrowing)
+[![npm version](https://img.shields.io/npm/v/doyouspeakrowing)](https://www.npmjs.com/package/doyouspeakrowing)
 [![issues](https://img.shields.io/github/issues/doyouspeakrowing/doyouspeakrowing.github.io)](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io/issues)
 
 ## Download and Installation
