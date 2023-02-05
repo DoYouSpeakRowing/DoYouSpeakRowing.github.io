@@ -1,24 +1,24 @@
-# [Bootstrap - Multilingual glossary](https://doyouspeakrowing.github.io/www/)
+# [Bootstrap - Multilingual glossary](https://doyouspeakrowing.github.io/)
 
-[Multilingual glossary](https://doyouspeakrowing.github.io/www) is a one page, website theme built with [Bootstrap](https://getbootstrap.com/) to present a glossary in multiple languages
+[Multilingual glossary](https://doyouspeakrowing.github.io/) is a one page, website theme built with [Bootstrap](https://getbootstrap.com/) to present a glossary in multiple languages
 
 ## Preview
-[![Doyouspeakrowing  Preview](Doyouspeakrowing_preview.webp)](https://doyouspeakrowing.github.io/www)
-**[View Live Preview](https://doyouspeakrowing.github.io/www)**
+[![Doyouspeakrowing  Preview](Doyouspeakrowing_preview.webp)](https://doyouspeakrowing.github.io/)
+**[View Live Preview](https://doyouspeakrowing.github.io/)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DoYouSpeakRowing/www/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/doyouspeakrowing)](https://www.npmjs.com/package/doyouspeakrowing)
-[![issues](https://img.shields.io/github/issues/doyouspeakrowing/www)](https://github.com/DoYouSpeakRowing/www/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/DoYouSpeakRowing/doyouspeakrowing.github.io/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/doyouspeakrowing)](https://doyouspeakrowing.github.io.npmjs.com/package/doyouspeakrowing)
+[![issues](https://img.shields.io/github/issues/doyouspeakrowing/doyouspeakrowing.github.io)](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io/issues)
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
 
 - Install using npm: `npm i doyouspeakrowing`
-- Clone the repo: `git clone https://github.com/DoYouSpeakRowing/www.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/DoYouSpeakRowing/www)
+- Clone the repo: `git clone https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io.git`
+- [Fork, Clone, or Download on GitHub](https://github.com/DoYouSpeakRowing/)
 
 ## Usage
 
@@ -44,13 +44,13 @@ You must have npm installed in order to use this build environment.
 
 #### Adding new languages
 
-It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-\<language\>-\<country\>.csv or dico-\<language\>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and language code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
+It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-\<language\>-\<country\>.csv or dico-\<language\>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and language code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
 
 
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/DoYouSpeakRowing/www/issues) here on GitHub.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io/issues) here on GitHub.
 
 ## About
 
@@ -69,4 +69,4 @@ The rowing terms published in this theme have been consolidated from the followi
 
 ## Copyright and License
 
-Copyright 2022 DoyouspeakRowing. Code released under the [MIT](https://raw.githubusercontent.com/DoYouSpeakRowing/www/main/LICENSE) license.
+Copyright 2022 DoyouspeakRowing. Code released under the [MIT](https://raw.githubusercontent.com/DoYouSpeakRowing/doyouspeakrowing.github.io/main/LICENSE) license.
