@@ -44,7 +44,7 @@ You must have npm installed in order to use this build environment.
 
 #### Adding new languages
 
-It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-\<language\>-\<country\>.csv or dico-\<language\>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and langauge code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
+It is very easy to add new languages in this glossary simply add a .csv file in the src folder. here are examples of this file for [english](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-en-gb.csv) or [french](https://github.com/DoYouSpeakRowing/www/blob/main/src/dico-fr.csv). Note that the file naming convention is either dico-\<language\>-\<country\>.csv or dico-\<language\>.csv (based on iso 639 language codes and iso 3166 country codes). Use the former (e.g dico-en-gb.csv) when country and language code differ and the latter when they are the same (e.g dico-fr.csv). The country code is used to detemine the flag in language selection dropdown. 
 
 
 
@@ -65,7 +65,7 @@ The csv to json conversion code in js is re-used from [Flatfile](https://csvjson
 
 The rowing terms published in this theme have been consolidated from the following sources:
 - source1
--source 2 ...
+- source 2 ...
 
 ## Copyright and License
 
