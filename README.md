@@ -18,7 +18,7 @@ To begin using this template, choose one of the following options to get started
 
 - Install using npm: `npm i doyouspeakrowing`
 - Clone the repo: `git clone https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/DoYouSpeakRowing/)
+- [Fork, Clone, or Download on GitHub](https://github.com/DoYouSpeakRowing/doyouspeakrowing.github.io)
 
 ## Usage
 
