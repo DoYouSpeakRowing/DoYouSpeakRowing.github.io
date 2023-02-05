@@ -39,16 +39,12 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
-      - run: npm ci
-      - run: npm run build
-      
       - name: Generate the sitemap
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://DoYouSpeakRowing.github.io/
-          path-to-root: ./docs
+          path-to-root: ./src/assets/
 
       - name: Output stats
         run: |
@@ -63,8 +59,11 @@ jobs:
             git add sitemap.xml
             git commit -m "Automated sitemap update" sitemap.xml
             git push
-          fi 
-       
+          fi
+          
+      - run: npm ci
+      - run: npm run build
+           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
