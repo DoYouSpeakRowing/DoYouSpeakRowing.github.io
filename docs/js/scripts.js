@@ -1,5 +1,5 @@
 /*!
-* Start Bootstrap - Multilingual Glossary v1.0.1 (https://doyouspeakrowing/www)
+* Start Bootstrap - Multilingual Glossary v1.0.2 (https://doyouspeakrowing/www)
 * Copyright 2013-2023 DoYouSpeakRowing
 * Licensed under MIT (https://github.com/StartBootstrap/doyouspeakrowing/blob/master/LICENSE)
 */
