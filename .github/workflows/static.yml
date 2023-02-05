@@ -39,6 +39,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+          
+      - run: npm ci
+      - run: npm run build
+      
       - name: Generate the sitemap
         id: sitemap
         uses: cicirello/generate-sitemap@v1
@@ -51,19 +55,7 @@ jobs:
           echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
           echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
           echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
-      - name: Commit and push sitemap
-        run: |
-          if [[ `git status --porcelain ./docs/sitemap.xml` ]]; then
-            git config --global user.name 'github-actions'
-            git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add ./docs/sitemap.xml
-            git commit -m "Automated sitemap update" ./docs/sitemap.xml
-            git push
-          fi
           
-      - run: npm ci
-      - run: npm run build
-      
       - name: Commit and push sitemap
         run: |
           if [[ `git status --porcelain ./docs` ]]; then
@@ -79,4 +71,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./public
